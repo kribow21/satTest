@@ -9,11 +9,11 @@ app = Flask(__name__)
 
 
 
-@app.route('/')
+@app.route('/api')
 def home():
     return 'Hello World'
 
-@app.route('/fruits', methods=['GET', 'POST', 'PATCH'])
+@app.route('api//fruits', methods=['GET', 'POST', 'PATCH'])
 def fruit_page():
     fruit_name = "kiwi"
     if request.method == 'GET':
